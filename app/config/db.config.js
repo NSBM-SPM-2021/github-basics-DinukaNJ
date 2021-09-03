@@ -1,9 +1,11 @@
 module.exports = {
+  
   HOST: "localhost",
   USER: "root",
   PASSWORD: "",
   DB: "spm_web_app",
   dialect: "mysql",
+
   pool: {
     max: 5,
     min: 0,
