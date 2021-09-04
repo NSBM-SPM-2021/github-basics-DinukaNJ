@@ -1,8 +1,9 @@
 {
   "name": "github-basics-dinukanj",
   "version": "1.0.0",
-  "description": "NOde.js with Express, Sequelize & Mysql.",
-  "main": "server.js",
+  "description": "NOde.js with Express & Mysql.",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

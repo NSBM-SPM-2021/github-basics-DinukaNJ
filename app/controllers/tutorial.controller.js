@@ -1,10 +1,13 @@
-const db = require("../models");
-const Tutorial = db.tutorials;
-const Op = db.Sequelize.Op;
+import { insertTutorial } from "../models/tutorial.model.js";
+  
 
-
-exports.create = (req, res) => { };
-
-//exports.findAll = (req, res) => { };
-//exports.delete = (req, res) => { };
-
+export const createTutorial = (req, res) => {
+    const data = req.body;
+    insertTutorial(data, (err, results) => {
+        if (err){
+            res.send(err);
+        }else{
+            res.json(results);
+        }
+    });
+}
