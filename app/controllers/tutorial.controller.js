@@ -1,4 +1,4 @@
-import { getTutorials } from "../models/tutorial.model.js";
+import { getTutorials, insertTutorial } from "../models/tutorial.model.js";
   
 
 

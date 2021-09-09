@@ -11,3 +11,8 @@ export const getTutorials = (result) => {
         }
     });   
 }
+
+
+export const insertProduct = (data, result) => {
+     
+}
