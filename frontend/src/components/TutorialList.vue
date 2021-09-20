@@ -46,25 +46,19 @@
         <tr>
           <th>Tutorial Name</th>
           <th>Description</th>
-          <th class="has-text-centered">Actions</th>
+ 
         </tr>
       </thead>
       <tbody>
         <tr v-for="item in items" :key="item.id">
           <td>{{ item.title }}</td>
           <td>{{ item.description }}</td>
-          <td class="has-text-centered">
-            <a
-              class="button is-danger is-small"
-              @click="deleteProduct(item.product_id)"
-              >Delete</a
-            >
-          </td>
+         
         </tr>
       </tbody>
     </table>
 
-    <router-link :to="{ name: 'Create' }" class="button is-success mt-5">Add Tutorial</router-link>
+    <router-link :to="{ name: 'tutorials' }" class="button is-success mt-5">Add Tutorial</router-link>
 
 
   </div>
