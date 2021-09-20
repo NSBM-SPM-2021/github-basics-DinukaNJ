@@ -6,9 +6,9 @@ const router = express.Router();
 //routes
 router.get('/', showTutorials);
 
-router.post('/products', createTutorial);
+router.post('/tutorials', createTutorial);
 
-router.delete('/products', deleteTutorials);
+//router.delete('/products', deleteTutorials);
 
 
 
