@@ -5,9 +5,7 @@ class TutorialDataService {
     return http.get('/tutorials')
   }
 
-  create (data) {
-    return http.post('/tutorials', data)
-  }
+ 
 
 }
 
