@@ -5,6 +5,11 @@ class TutorialDataService {
     return http.get('/tutorials')
   }
 
+  delete () {
+    return http.get('/tutorials/$id')
+  }
+
+
  
 
 }
