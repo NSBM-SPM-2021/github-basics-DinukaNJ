@@ -46,6 +46,8 @@
         <tr>
           <th>Tutorial Name</th>
           <th>Description</th>
+          <th>Action</th>
+
  
         </tr>
       </thead>
@@ -53,6 +55,7 @@
         <tr v-for="item in items" :key="item.id">
           <td>{{ item.title }}</td>
           <td>{{ item.description }}</td>
+          <td>Delete</td>
          
         </tr>
       </tbody>

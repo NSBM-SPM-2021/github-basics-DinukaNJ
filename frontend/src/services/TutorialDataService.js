@@ -9,8 +9,8 @@ class TutorialDataService {
     return http.get('/tutorials/$id')
   }
 
-  add () {
-    return http.get('/addtutorials')
+  create (data) {
+    return http.post('/tutorials', data)
   }
 
 
