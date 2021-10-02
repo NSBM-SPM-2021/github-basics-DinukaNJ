@@ -5,11 +5,7 @@ const router = express.Router();
 
 //routes
 router.get('/', showTutorials);
-
 router.post('/tutorials', createTutorial);
-
-//router.delete('/products', deleteTutorials);
-
-
+router.delete('/tutorials', deleteTutorials);
 
 export default router;

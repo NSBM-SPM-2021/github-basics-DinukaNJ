@@ -13,9 +13,6 @@ class TutorialDataService {
     return http.post('/tutorials', data)
   }
 
-
- 
-
 }
 
 export default new TutorialDataService()
