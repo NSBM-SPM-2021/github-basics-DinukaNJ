@@ -2,25 +2,19 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
   
 import App from './App.vue'
-//import Create from './components/AddProduct.vue'
-//import Edit from './components/EditProduct.vue'
 import Index from './components/TutorialList.vue'
+import Add from './components/AddTutorial.vue'
   
 Vue.use(VueRouter)
   
 Vue.config.productionTip = false
   
 const routes = [
-//   {
-//     name: 'Create',
-//     path: '/create',
-//     component: Create
-//   },
-//   {
-//     name: 'Edit',
-//     path: '/edit/:id',
-//     component: Edit
-//   },
+  {
+    name: 'Add',
+    path: '/add',
+    component: Add
+  },
   {
     name: 'Index',
     path: '/',

@@ -1,44 +1,34 @@
 <template>
-  <div class="submit-form">
-    <div v-if="!submitted">
-      <div class="form-group">
-        <label for="title">Title</label>
+  <div>
+    <div class="field">
+      <label class="label">Product Name</label>
+      <div class="control">
         <input
+          class="input"
           type="text"
-          class="form-control"
-          id="title"
-          required
-          v-model="tutorial.title"
-          name="title"
+          placeholder="Product Name"
+          v-model="productName"
         />
       </div>
-
-      <div class="form-group">
-        <label for="description">Description</label>
-        <input
-          class="form-control"
-          id="description"
-          required
-          v-model="tutorial.description"
-          name="description"
-        />
-      </div>
-
-      <button @click="saveTutorial" class="btn btn-success">Submit</button>
     </div>
-
-    <div v-else>
-      <h4>You submitted successfully!</h4>
-      <button class="btn btn-success" @click="newTutorial">Add</button>
+  
+    <div class="field">
+      <label class="label">Price</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          placeholder="Price"
+          v-model="productPrice"
+        />
+      </div>
+    </div>
+  
+    <div class="control">
+      <button class="button is-success" @click="saveProduct">SAVE</button>
     </div>
   </div>
 </template>
 
 
 
-<style>
-  .submit-form {
-    max-width: 300px;
-    margin: auto;
-  }
-</style>
