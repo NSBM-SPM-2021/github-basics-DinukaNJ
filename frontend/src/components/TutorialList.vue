@@ -3,6 +3,19 @@
 
   <div>
 <br>
+
+<div id="extended-img" ref="wrapper"> 
+    <img 
+      v-bind:class="{
+        'landscape': isLandscape,
+        'cover': size && size === 'cover',
+        'contain': size && size ==='contain'
+      }" 
+      v-bind:src="src" 
+      v-bind:alt="alt" 
+      ref="image">
+  </div>
+
 <br>
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -41,6 +54,7 @@
 </nav>
 
 <br>
+<hr>
 <br>
     
     <table class="table is-striped is-bordered mt-2 is-fullwidth">
@@ -104,9 +118,11 @@ export default {
       try {
         await axios.delete(`http://localhost:8080/tutorials/${id}`);
         this.getProducts();
+        this.$router.push("Add");
       } catch (err) {
         console.log(err);
       }
+      this.$router.go()
     },
   
 
