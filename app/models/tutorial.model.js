@@ -23,3 +23,14 @@ export const insertTutorial = (data, result) => {
         }
     });
 }
+
+export const deleteTutorialById = (id, result) => {
+    db.query("DELETE FROM tutorials WHERE id = ?", [id], (err, results) => {             
+        if(err) {
+            console.log(err);
+            result(err, null);
+        } else {
+            result(null, results);
+        }
+    });   
+}
