@@ -7,7 +7,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="">
-      <h2 class="title is-2">Tutorial Management System</h2>
+      <h2 class="title is-2">Tutorial Management</h2>
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
