@@ -108,7 +108,7 @@ export default {
 
     async getTutorials() {
       try {
-        const response = await axios.get("http://localhost:8080/");
+        const response = await axios.get("https://tutorial-management.herokuapp.com/");
         this.items = response.data;
       } catch (err) {
         console.log(err);
@@ -116,7 +116,7 @@ export default {
     },
     async deleteTutorial(id) {
       try {
-        await axios.delete(`http://localhost:8080/tutorials/${id}`);
+        await axios.delete(`https://tutorial-management.herokuapp.com/tutorials/${id}`);
         this.getProducts();
         this.$router.push("Add");
       } catch (err) {

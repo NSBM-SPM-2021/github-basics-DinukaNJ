@@ -82,7 +82,7 @@ export default {
     // Create New product
     async AddTutorial() {
       try {
-        await axios.post("http://localhost:8080/tutorials", {
+        await axios.post("https://tutorial-management.herokuapp.com/tutorials", {
           title: this.title,
           description: this.description,
         });
